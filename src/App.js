@@ -2,7 +2,6 @@
 import './App.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import ReactDOM from 'react-dom';
 
 const StarsDisplay = props => (
   <>
