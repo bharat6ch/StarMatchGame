@@ -1,38 +1,100 @@
+
+
+
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto", Helvetica;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.help {
+  color: #666;
+  margin: 10px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left {
+  text-align: center;
+  width: 50%;
+  border: thin solid #ddd;
+}
+
+.right {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+  border: thin solid #ddd;
+}
+
+.star {
+  display: inline-block;
+  margin: 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: #ffc107;
+}
+
+/*  .star:after {
+  content: "\2605";
+  font-size: 45px;
+  
+  
+ }  */
+
+.star:before {
+  content: "\2B50";
+  font-size: 30px;
+}
+
+.number {
+  background-color: #eee;
+  border: 0 solid #ddd;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.number:focus,
+.number:active {
+  outline: none;
+  border: thin solid #ddd;
+}
+
+.timer {
+  color: #666;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.game-done .message {
+  font-size: 250%;
+  font-weight: bold;
+  margin: 15px;
 }
